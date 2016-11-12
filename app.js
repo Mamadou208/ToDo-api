@@ -65,7 +65,7 @@ function handleError(res, reason, message, code) {
 //routes
 app.get('/', function (req, res) {
     res.send("blog-api up and running");
-});
+})
 /**
  Next we need to define our API end points - we need to be able to perform basic CRUD operations on the following resources: `tasks`.
  ### Users
@@ -75,10 +75,9 @@ app.get('/', function (req, res) {
  - `PUT    /api/item/:item_id` - update task
  - `DELETE /api/item/:item_id` - delete task
  **/
-/* GET /api/items */
-router.route('/api/items')
+/* GET /api/items*/
 // fetch all users
-.get(function (req, res) {
+.get('/api/items', function (req, res) {
     new Task().fetchAll()
         .then(function (items) {
             res.send(items.toJSON());
