@@ -1,0 +1,27 @@
+{
+  "name": "ToDo_list",
+  "description": "Building an JSON API with Bookshelf.js and Express.js",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "Mamadou Diallo",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "bookshelf": "*",
+    "express": "^4.14.0",
+    "knex": "*",
+    "mysql": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Node",
+    "Booshelf",
+    "Mysql"
+  ]
+}
